@@ -5,12 +5,12 @@ import styles from "./BusinessList.module.css";
 export default function BusinessList() {
   return (
     <>
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-      <Business />
-      <Business />
+      <div className={styles.container}>
+        <Business />
+        <Business />
+        <Business />
+        <Business />
+      </div>
     </>
   );
 }

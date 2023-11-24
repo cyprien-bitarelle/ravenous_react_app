@@ -1,0 +1,32 @@
+.card {
+  width: calc(25% - 10px);
+  margin: 20px 0;
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  height: calc(25% - 20px);
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.cardImgTop {
+  border-radius: 1rem 1rem 0 0;
+  width: 100%;
+}
+
+.cardBody {
+  border-radius: 0 0 1rem 1rem;
+  font-size: 1rem;
+  list-style: none;
+  padding: 0% 10px;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 0% 10px;
+  margin: 0.5rem 0;
+}

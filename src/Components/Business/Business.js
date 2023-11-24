@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./Business.module.css";
 
 const business = {
   imageSrc:
@@ -16,17 +17,23 @@ const business = {
 export default function Business() {
   return (
     <>
-      <div>
-        <img src={business.imageSrc} alt="A Doner Kebab" />
-        <h3>{business.name}</h3>
-        <p>{business.address}</p>
-        <p>{business.city}</p>
-        <p>
-          {business.state} {business.zipCode}
-        </p>
-        <p>{business.category}</p>
-        <p>{business.rating}</p>
-        <p>{business.reviewCount}</p>
+      <div className={styles.card}>
+        <img
+          className={styles.cardImgTop}
+          src={business.imageSrc}
+          alt="A Doner Kebab"
+        />
+        <h3 className={styles.cardTitle}>{business.name}</h3>
+        <ul className={styles.cardBody}>
+          <li>{business.rating}</li>
+          <li>{business.reviewCount}</li>
+          <li>{business.category}</li>
+          <li>
+            {business.state} {business.zipCode}
+          </li>
+          <li>{business.city}</li>
+          <li>{business.address}</li>
+        </ul>
       </div>
     </>
   );
